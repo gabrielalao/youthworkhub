@@ -1,0 +1,51 @@
+.jobs-search {
+  min-width: 50em;
+  .filters {
+    min-width: 45em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .jobs-filter-form {
+      z-index: 1;
+      border: 1px solid black;
+      position: fixed;
+
+      left: 0.2em;
+
+      text-align: left;
+
+      width: 10em;
+
+      display: flex;
+      flex-direction: column;
+      padding: 2em;
+
+      h2 {
+        text-decoration: underline;
+      }
+
+      h4 {
+        margin-top: 0.5em;
+      }
+
+      .job-types {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .filter-checkbox {
+          width: 8em;
+          height: 2em;
+
+        }
+      }
+      .wage {
+        label {
+          margin-left: 2.8em;
+        }
+      }
+    }
+  }
+}

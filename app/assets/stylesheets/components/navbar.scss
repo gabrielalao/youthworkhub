@@ -1,0 +1,178 @@
+@import './base/colors.scss';
+@import './base/fonts.scss';
+
+nav {
+  background-color: hsla(0,0,15%,1);
+  font: $normal;
+  font-size: 1.3em;
+  z-index: 80;
+  position: relative;
+
+
+  .inner {
+    width: 90%;
+    margin: 0 auto;
+    color: $grey-lightest;
+    height: 100px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo img {
+      width: 130px;
+      border-radius: 10%;
+      border: 2px solid hsla(0,0,15%,1);
+      margin-top: 10px;
+      position: relative;
+    }
+
+    .logo:hover {
+      cursor: pointer;
+    }
+
+    ul {
+      min-width: 40%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      .current {
+        color: $base-lightest;
+        background-color: $overlay;
+      }
+    }
+  }
+  .drop-down {
+    background-color: hsla(0,0,15%,1);
+    display: none;
+    border-radius: 20%;
+  }
+  .dropper {
+    position: relative;
+  }
+
+  .dropper:hover .drop-down {
+    position: absolute;
+    display: block;
+  }
+
+  a {
+    display: inline-block;
+    padding: 15px;
+    margin-right: 10px;
+    border-radius: 20px;
+  }
+
+  a:hover {
+    background-color: $overlay;
+    color: white;
+  }
+
+  #login-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 134px;
+    height: 130px;
+    position: relative;
+    width: 130px;
+    border-radius: 10%;
+    border: 2px solid #BBB;
+    background-color: hsla(0,0,15%,1);
+
+    h5 {
+      font-size: 1.2em;
+    }
+
+    img {
+      border-radius: 25%;
+      width: 80%;
+      height: auto;
+    }
+
+    button {
+      border-radius: 8%;
+    }
+
+    .popup, .popup-buttons {
+      position: relative;
+      display: none;
+
+      .highlight {
+        background: linear-gradient(180deg,
+                                    $contrast-light,
+                                    $contrast-darker);
+      }
+      .highlight:hover {
+        background: linear-gradient(180deg,
+                                    $contrast-lighter,
+                                    $contrast-dark);
+      }
+    }
+  }
+  #login-box div:hover {
+    color: $grey-light;
+  }
+
+  #login-box div:hover .popup-buttons,
+  #login-box div:hover .popup {
+    position: absolute;
+    right: -15px;
+    z-index: 100;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    button {
+      margin: 0;
+      width: 50%;
+      min-width: 120px;
+      padding: 20px;
+    }
+
+
+    .flag {
+      display: inline;
+      position: relative;
+      display: none;
+    }
+
+    button:hover + .flag {
+      display: block;
+    }
+
+    .flag:after, .flag:before {
+    	border: solid transparent;
+      right: 0.5em;
+      bottom: -0.5em;
+      position: absolute;
+      z-index: 90;
+    	pointer-events: none;
+    }
+
+    .flag:after {
+      width: 1px;
+      height: 1px;
+      position: absolute;
+      content: "";
+      bottom: 1em;
+      left: -0.5em;
+      border: 15px transparent solid;
+      border-left: 15px solid $contrast-light;
+      z-index: 91;
+    }
+    .flag:before {
+      background-color: white;
+      border: solid;
+      border-color: $contrast-light;
+      border-width: 8px;
+      border-radius: 5px;
+      padding: 0.3em;
+      content: "Trial Account";
+    }
+  }
+}

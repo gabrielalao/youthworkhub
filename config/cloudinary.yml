@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: youth-work-hub
+  api_key: '134271358568342'
+  api_secret: 5Qor8Tgteh1ReM6x47vvG3izCjo
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: youth-work-hub
+  api_key: '134271358568342'
+  api_secret: 5Qor8Tgteh1ReM6x47vvG3izCjo
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: youth-work-hub
+  api_key: '134271358568342'
+  api_secret: 5Qor8Tgteh1ReM6x47vvG3izCjo
+  enhance_image_tag: true
+  static_image_support: false

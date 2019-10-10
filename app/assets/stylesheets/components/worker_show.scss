@@ -1,0 +1,68 @@
+@import './base/colors';
+
+.worker-show, .worker-show-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 5px;
+
+  a {
+    font-size: 1.2em;
+    color: $base-lightest;
+    cursor: pointer;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.worker-show-wrapper {
+  padding: 25px;
+  background: linear-gradient(90deg, $base-darker, $base-lighter);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+
+  .review-list {
+    margin: 25px;
+  }
+  .review {
+    margin: 15px;
+    padding: 10px;
+  }
+}
+
+.worker-show {
+  background: linear-gradient(90deg, $base-dark, $base-lightest);
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+
+  h3 {
+    margin-top: 15px;
+  }
+
+  .name-pic, .wage-bio {
+    margin: 0 auto;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .bio {
+      padding: 15px;
+      margin-top: 15px;
+      background-color: white;
+      border-radius: 4px;
+    }
+  }
+
+  .name-pic {
+    img {
+      margin-top: 15px;
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+  }
+}

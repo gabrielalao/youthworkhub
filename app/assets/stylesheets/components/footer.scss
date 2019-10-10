@@ -1,0 +1,65 @@
+@import './base/colors';
+
+footer {
+  position: relative;
+  background-color: white;
+  z-index: 3;
+  font-weight: normal;
+  text-align: center;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  margin-top: 10px;
+  text-align: center;
+
+  width: 100vw;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .logo-image {
+    margin: 10px;
+    margin-left: 20px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .footer-text {
+    font-family: 'Fredoka One', cursive;
+    margin-top: 70px;
+    position: relative;
+
+    .tagline {
+      margin-top: 5px;
+      position: relative;
+    }
+  }
+
+  .footer-links {
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    a {
+      transition: width .2s ease-in-out;
+    }
+
+    a:hover {
+      background-color: $base-lightest;
+      box-shadow: 2px 4px $grey-darkest;
+      transform: scale(1.05);
+    }
+
+    .top-link {
+      margin-bottom: 50%;
+    }
+
+    .top-link, .bottom-link {
+      border: solid black 1px;
+      border-radius: 15%;
+      padding: 5px;
+      box-shadow: 1px 2px $grey-dark;
+    }
+  }
+}

@@ -1,0 +1,91 @@
+@import './base/colors';
+
+.job-show {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(90deg, $base-darker, $base-lighter);
+  width: 80%;
+  margin: 0 auto;
+
+  a {
+    font-size: 1.2em;
+    color: $base-lightest;
+    cursor: pointer;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .job-show-details {
+    span {
+      color: $contrast-lighter;
+      position:relative;
+    }
+    table {
+      margin: 30px auto;
+    }
+
+    th {
+      font-size: 150%;
+      padding: 25px;
+    }
+
+    td {
+      padding: 20px;
+      height: 200%;
+      vertical-align: center;
+    }
+    tr:nth-child(odd) {
+      background-color: $contrast-light;
+    }
+    tr:nth-child(even) {
+      background-color: white;
+    }
+  }
+  div {
+    padding: 20px;
+    margin:20px;
+
+    h2 {
+      margin: 25px;
+    }
+
+    h4 {
+      margin-top: 20px;
+    }
+
+    h5 {
+      text-align: left;
+      text-indent: 40px;
+    }
+
+    p {
+      margin: 20px;
+      text-align: left;
+    }
+  }
+
+  .job-show-details {
+    div {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  .accept-job, .give-feedback {
+    margin: 20px auto;
+    width: 200px;
+    background: linear-gradient(180deg, $contrast-light, $contrast-darkest);
+  }
+  .accept-job:hover, .give-feedback:hover  {
+    background: linear-gradient(180deg, $contrast-lighter, $contrast-darker);
+  }
+  .static-map {
+    width: 50%;
+    margin: 0 auto;
+  }
+  @media screen and (max-width: 800px) {
+    .static-map {
+      width: 70%;
+    }
+  }
+}
